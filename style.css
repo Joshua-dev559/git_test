@@ -1,0 +1,41 @@
+.header-container {
+    display: flex;
+    align-items: center; /* Vertically centers buttons with text */
+    gap: 20px; /* Space between title and buttons */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Initially hide the buttons */
+.hover-buttons {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+}
+
+/* Show buttons when the container is hovered */
+.header-container:hover .hover-buttons {
+    opacity: 1;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px; /* Space between buttons */
+}
+
+/* Button hover effect */
+.action-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
